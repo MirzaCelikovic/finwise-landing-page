@@ -1,43 +1,32 @@
 export interface IMenuItem {
-    text: string;
+    key: string;
     url: string;
 }
 
-export interface IBenefit {
-    title: string;
-    description: string;
+// Non-text presentation data. All copy lives in the message catalogs and is
+// read by index/key via next-intl; these interfaces describe what remains in
+// the `src/data/**` files (icons, image paths, prices, etc.).
+export interface IBenefitVisual {
     imageSrc: string;
-    bullets: IBenefitBullet[]
+    bullets: IBenefitBulletVisual[];
 }
 
-export interface IBenefitBullet {
-    title: string;
-    description: string;
+export interface IBenefitBulletVisual {
     icon: JSX.Element;
 }
 
-export interface IPricing {
-    name: string;
-    price: number | string;
-    features: string[];
+export interface IPricingVisual {
+    // Numeric monthly price, or `null` for tiers that show a localized text
+    // price (e.g. "Custom") read from the message catalog.
+    price: number | null;
 }
 
-export interface IFAQ {
-    question: string;
-    answer: string;
-}
-
-export interface ITestimonial {
-    name: string;
-    role: string;
-    message: string;
+export interface ITestimonialVisual {
     avatar: string;
 }
 
-export interface IStats {
-    title: string;
+export interface IStatVisual {
     icon: JSX.Element;
-    description: string;
 }
 
 export interface ISocials {

@@ -1,24 +1,25 @@
 import { IMenuItem, ISocials } from "@/types";
 
+// Non-text data only (links, contact details, social URLs). All copy
+// (subheading, headings, link labels, copyright) lives in
+// `messages/{locale}.json` under `footer`.
 export const footerDetails: {
-    subheading: string;
     quickLinks: IMenuItem[];
     email: string;
     telephone: string;
     socials: ISocials;
 } = {
-    subheading: "Empowering businesses with cutting-edge financial technology solutions.",
     quickLinks: [
         {
-            text: "Features",
+            key: "features",
             url: "#features"
         },
         {
-            text: "Pricing",
+            key: "pricing",
             url: "#pricing"
         },
         {
-            text: "Testimonials",
+            key: "testimonials",
             url: "#testimonials"
         }
     ],
