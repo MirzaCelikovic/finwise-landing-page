@@ -1,17 +1,48 @@
 'use client';
 
-import Link from 'next/link';
 import React, { useState } from 'react';
 import { Transition } from '@headlessui/react';
 import { HiOutlineXMark, HiBars3 } from 'react-icons/hi2';
 import { FaFingerprint } from 'react-icons/fa';
+import { useLocale, useTranslations } from 'next-intl';
+import clsx from 'clsx';
 
 import Container from './Container';
+import { Link, usePathname } from '@/i18n/navigation';
+import { routing } from '@/i18n/routing';
 import { siteDetails } from '@/data/siteDetails';
 import { menuItems } from '@/data/menuItems';
 
+const LanguageSwitcher: React.FC = () => {
+    const t = useTranslations('nav');
+    const pathname = usePathname();
+    const activeLocale = useLocale();
+
+    return (
+        <div className="flex items-center gap-2" aria-label={t('switchLanguage')}>
+            {routing.locales.map((locale, index) => (
+                <React.Fragment key={locale}>
+                    {index > 0 && <span className="text-foreground-accent" aria-hidden="true">/</span>}
+                    <Link
+                        href={pathname}
+                        locale={locale}
+                        aria-current={activeLocale === locale ? 'true' : undefined}
+                        className={clsx('uppercase text-sm transition-colors', {
+                            'font-semibold text-foreground': activeLocale === locale,
+                            'text-foreground-accent hover:text-foreground': activeLocale !== locale,
+                        })}
+                    >
+                        {locale}
+                    </Link>
+                </React.Fragment>
+            ))}
+        </div>
+    );
+};
+
 const Header: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const t = useTranslations('nav');
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
@@ -30,23 +61,27 @@ const Header: React.FC = () => {
                     </Link>
 
                     {/* Desktop Menu */}
-                    <ul className="hidden md:flex space-x-6">
+                    <ul className="hidden md:flex items-center space-x-6">
                         {menuItems.map(item => (
-                            <li key={item.text}>
+                            <li key={item.key}>
                                 <Link href={item.url} className="text-foreground hover:text-foreground-accent transition-colors">
-                                    {item.text}
+                                    {t(`links.${item.key}`)}
                                 </Link>
                             </li>
                         ))}
                         <li>
                             <Link href="#cta" className="text-black bg-primary hover:bg-primary-accent px-8 py-3 rounded-full transition-colors">
-                                Download
+                                {t('download')}
                             </Link>
+                        </li>
+                        <li>
+                            <LanguageSwitcher />
                         </li>
                     </ul>
 
                     {/* Mobile Menu Button */}
-                    <div className="md:hidden flex items-center">
+                    <div className="md:hidden flex items-center gap-4">
+                        <LanguageSwitcher />
                         <button
                             onClick={toggleMenu}
                             type="button"
@@ -59,7 +94,7 @@ const Header: React.FC = () => {
                             ) : (
                                 <HiBars3 className="h-6 w-6" aria-hidden="true" />
                             )}
-                            <span className="sr-only">Toggle navigation</span>
+                            <span className="sr-only">{t('toggleNavigation')}</span>
                         </button>
                     </div>
                 </nav>
@@ -78,15 +113,15 @@ const Header: React.FC = () => {
                 <div id="mobile-menu" className="md:hidden bg-white shadow-lg">
                     <ul className="flex flex-col space-y-4 pt-1 pb-6 px-6">
                         {menuItems.map(item => (
-                            <li key={item.text}>
+                            <li key={item.key}>
                                 <Link href={item.url} className="text-foreground hover:text-primary block" onClick={toggleMenu}>
-                                    {item.text}
+                                    {t(`links.${item.key}`)}
                                 </Link>
                             </li>
                         ))}
                         <li>
                             <Link href="#cta" className="text-black bg-primary hover:bg-primary-accent px-5 py-2 rounded-full block w-fit" onClick={toggleMenu}>
-                                Get Started
+                                {t('getStarted')}
                             </Link>
                         </li>
                     </ul>

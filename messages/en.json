@@ -1,0 +1,224 @@
+{
+  "metadata": {
+    "title": "Finwise - Smart, Secure Financial Management",
+    "description": "Finwise empowers businesses with cutting-edge technology solutions to drive success and efficiency."
+  },
+  "nav": {
+    "links": {
+      "features": "Features",
+      "pricing": "Pricing",
+      "testimonials": "Testimonials"
+    },
+    "download": "Download",
+    "getStarted": "Get Started",
+    "toggleNavigation": "Toggle navigation",
+    "switchLanguage": "Switch language"
+  },
+  "hero": {
+    "heading": "Smart, Secure, Simple Financial Management",
+    "subheading": "From effortless budgeting to real-time investment insights, Finwise puts you in control of your money like never before",
+    "appMockupAlt": "app mockup"
+  },
+  "logos": {
+    "trustedBy": "Trusted by <highlight>2000+</highlight> customers worldwide"
+  },
+  "benefits": {
+    "srHeading": "Features",
+    "items": [
+      {
+        "title": "Smart Budgeting",
+        "description": "Take the guesswork out of managing your money. Our AI-powered budgeting tool adapts to your lifestyle and helps you stay on track.",
+        "bullets": [
+          {
+            "title": "Intelligent Categorization",
+            "description": "Automatically sorts your transactions for crystal-clear insights."
+          },
+          {
+            "title": "Customizable Goals",
+            "description": "Set and track financial objectives that matter to you."
+          },
+          {
+            "title": "Predictive Analysis",
+            "description": "Get ahead of your finances with spending forecasts and alerts."
+          }
+        ]
+      },
+      {
+        "title": "Seamless Investing",
+        "description": "Start building wealth today, no financial degree required. Finwise makes investing accessible and straightforward.",
+        "bullets": [
+          {
+            "title": "Micro-Investing",
+            "description": "Begin with as little as $1 and watch your money grow."
+          },
+          {
+            "title": "Expert Portfolios",
+            "description": "Choose from investment strategies tailored to your risk tolerance."
+          },
+          {
+            "title": "Real-Time Performance",
+            "description": "Track your investments with easy-to-understand metrics and visuals."
+          }
+        ]
+      },
+      {
+        "title": "Bank-Grade Security",
+        "description": "Your financial data deserves the best protection. Rest easy knowing Finwise employs cutting-edge security measures.",
+        "bullets": [
+          {
+            "title": "Military-Grade Encryption",
+            "description": "Your information is safeguarded with the highest level of encryption."
+          },
+          {
+            "title": "Biometric Authentication",
+            "description": "Access your account securely with fingerprint or facial recognition."
+          },
+          {
+            "title": "Real-Time Fraud Detection",
+            "description": "Our system constantly monitors for suspicious activity to keep your money safe."
+          }
+        ]
+      }
+    ]
+  },
+  "sections": {
+    "pricing": {
+      "title": "Pricing",
+      "description": "Simple, transparent pricing. No surprises."
+    },
+    "testimonials": {
+      "title": "What Our Clients Say",
+      "description": "Hear from those who have partnered with us."
+    }
+  },
+  "pricing": {
+    "perMonth": "/mo",
+    "getStarted": "Get Started",
+    "featuresLabel": "FEATURES",
+    "featuresTagline": "Everything in basic, plus...",
+    "tiers": [
+      {
+        "name": "Starter",
+        "features": [
+          "Basic cloud integration",
+          "Up to 5 team members",
+          "20GB storage",
+          "Email support"
+        ]
+      },
+      {
+        "name": "Pro",
+        "features": [
+          "Advanced cloud integration",
+          "Up to 20 team members",
+          "100GB storage",
+          "Priority email & phone support",
+          "Advanced analytics"
+        ]
+      },
+      {
+        "name": "Enterprise",
+        "price": "Custom",
+        "features": [
+          "Full cloud integration",
+          "Unlimited team members",
+          "Unlimited storage",
+          "24/7 dedicated support",
+          "Custom solutions",
+          "On-site training"
+        ]
+      }
+    ]
+  },
+  "testimonials": {
+    "items": [
+      {
+        "name": "John Smith",
+        "role": "CEO at Company",
+        "message": "{brand}'s AI-driven insights have transformed how we approach financial planning for our clients. It's an invaluable resource in the modern financial landscape."
+      },
+      {
+        "name": "Jane Doe",
+        "role": "CTO at Startup",
+        "message": "As a CTO, I'm impressed by {brand}'s robust security measures and seamless integrations. It's rare to find an app that balances user-friendliness with such advanced technology."
+      },
+      {
+        "name": "Emily Johnson",
+        "role": "Product Manager",
+        "message": "{brand} is revolutionizing personal finance management. Its intuitive design and powerful features make it an indispensable tool for anyone serious about financial growth."
+      }
+    ]
+  },
+  "faq": {
+    "label": "FAQ'S",
+    "heading": "Frequently Asked Questions",
+    "tagline": "Ask us anything!",
+    "items": [
+      {
+        "question": "Is {brand} secure?",
+        "answer": "Absolutely. We use bank-level encryption to protect your data and never store your login information. Plus, our biometric authentication adds an extra layer of security."
+      },
+      {
+        "question": "Can I use {brand} on multiple devices?",
+        "answer": "Absolutely! Your Finwise account syncs seamlessly across all your devices - smartphone, tablet, and computer."
+      },
+      {
+        "question": "Can I connect all my bank accounts?",
+        "answer": "Yes! {brand} supports connections with over 10,000 financial institutions worldwide. Simply log in through our secure portal to link your accounts."
+      },
+      {
+        "question": "Do I need any financial expertise to use the investing features?",
+        "answer": "Not at all! Our expert-curated portfolios and educational resources make investing accessible to everyone, regardless of experience level."
+      },
+      {
+        "question": "What if I need help using the app?",
+        "answer": "Our dedicated support team is available 24/7 via chat or email. Plus, we offer extensive in-app tutorials and a comprehensive knowledge base to help you make the most of Finwise."
+      }
+    ]
+  },
+  "stats": {
+    "items": [
+      {
+        "title": "20M+",
+        "description": "Transactions processed securely every day, providing real-time insights."
+      },
+      {
+        "title": "5.0",
+        "description": "Star rating, consistently maintained across app stores."
+      },
+      {
+        "title": "200+",
+        "description": "Financial Institutions, seamlessly integrated, so you can manage all accounts."
+      }
+    ]
+  },
+  "cta": {
+    "heading": "Join Over 1 Million Users To Transform Your Finances",
+    "subheading": "Your journey to financial freedom starts here. Download Finwise today and take the first step towards a brighter financial future!"
+  },
+  "appButtons": {
+    "appStore": {
+      "subtitle": "Download on the",
+      "title": "App Store"
+    },
+    "playStore": {
+      "subtitle": "GET IT ON",
+      "title": "Google Play"
+    }
+  },
+  "footer": {
+    "subheading": "Empowering businesses with cutting-edge financial technology solutions.",
+    "quickLinksHeading": "Quick Links",
+    "quickLinks": {
+      "features": "Features",
+      "pricing": "Pricing",
+      "testimonials": "Testimonials"
+    },
+    "contactHeading": "Contact Us",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "copyright": "Copyright © {year} {brand}. All rights reserved.",
+    "madeWith": "Made with ♥ by <link>Nexi Launch</link>",
+    "uiKit": "UI kit by <link>Youthmind</link>"
+  }
+}

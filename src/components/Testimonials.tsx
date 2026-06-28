@@ -1,8 +1,14 @@
 import React from 'react';
 import Image from 'next/image';
-import { testimonials } from '@/data/testimonials';
+import { getTranslations } from 'next-intl/server';
 
-const Testimonials: React.FC = () => {
+import { testimonials } from '@/data/testimonials';
+import { siteDetails } from '@/data/siteDetails';
+
+const Testimonials: React.FC = async () => {
+    const t = await getTranslations('testimonials');
+    const items = t.raw('items') as { name: string; role: string }[];
+
     return (
         <div className="grid gap-14 max-w-lg w-full mx-auto lg:gap-8 lg:grid-cols-3 lg:max-w-full">
             {testimonials.map((testimonial, index) => (
@@ -13,17 +19,17 @@ const Testimonials: React.FC = () => {
                     <div className="flex items-center mb-4 w-full justify-center lg:justify-start">
                         <Image
                             src={testimonial.avatar}
-                            alt={`${testimonial.name} avatar`}
+                            alt={`${items[index].name} avatar`}
                             width={50}
                             height={50}
                             className="rounded-full shadow-md"
                         />
                         <div className="ml-4">
-                            <h3 className="text-lg font-semibold text-secondary">{testimonial.name}</h3>
-                            <p className="text-sm text-foreground-accent">{testimonial.role}</p>
+                            <h3 className="text-lg font-semibold text-secondary">{items[index].name}</h3>
+                            <p className="text-sm text-foreground-accent">{items[index].role}</p>
                         </div>
                     </div>
-                    <p className="text-foreground-accent text-center lg:text-left">&quot;{testimonial.message}&quot;</p>
+                    <p className="text-foreground-accent text-center lg:text-left">&quot;{t(`items.${index}.message`, { brand: siteDetails.siteName })}&quot;</p>
                 </div>
             ))}
         </div>

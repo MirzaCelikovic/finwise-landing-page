@@ -1,9 +1,12 @@
 import React from 'react'
 import clsx from 'clsx'
+import { getTranslations } from 'next-intl/server'
 
 import { ctaDetails } from '@/data/cta'
 
-const AppStoreButton = ({ dark }: { dark?: boolean }) => {
+const AppStoreButton = async ({ dark }: { dark?: boolean }) => {
+    const t = await getTranslations('appButtons.appStore');
+
     return (
         <a href={ctaDetails.appStoreUrl}>
             <button
@@ -18,10 +21,10 @@ const AppStoreButton = ({ dark }: { dark?: boolean }) => {
                 </div>
                 <div>
                     <div className="text-xs">
-                        Download on the
+                        {t('subtitle')}
                     </div>
                     <div className="-mt-1 font-sans text-xl font-semibold">
-                        App Store
+                        {t('title')}
                     </div>
                 </div>
             </button>

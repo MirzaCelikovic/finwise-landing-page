@@ -1,15 +1,24 @@
 import clsx from "clsx";
 import { BsFillCheckCircleFill } from "react-icons/bs";
+import { getTranslations } from "next-intl/server";
 
-import { IPricing } from "@/types";
+import { IPricingVisual } from "@/types";
 
 interface Props {
-    tier: IPricing;
+    tier: IPricingVisual;
+    index: number;
     highlight?: boolean;
 }
 
-const PricingColumn: React.FC<Props> = ({ tier, highlight }: Props) => {
-    const { name, price, features } = tier;
+const PricingColumn: React.FC<Props> = async ({ tier, index, highlight }: Props) => {
+    const { price } = tier;
+    const t = await getTranslations("pricing");
+
+    // Tier name, the textual price (e.g. "Custom") and feature labels come from
+    // the message catalog, keyed by the tier's index.
+    const name = t(`tiers.${index}.name`);
+    const features = t.raw(`tiers.${index}.features`) as string[];
+    const textPrice = price === null ? t(`tiers.${index}.price`) : null;
 
     return (
         <div className={clsx("w-full max-w-sm mx-auto bg-white rounded-xl border border-gray-200 lg:max-w-full", { "shadow-lg": highlight })}>
@@ -17,20 +26,20 @@ const PricingColumn: React.FC<Props> = ({ tier, highlight }: Props) => {
                 <h3 className="text-2xl font-semibold mb-4">{name}</h3>
                 <p className="text-3xl md:text-5xl font-bold mb-6">
                     <span className={clsx({ "text-secondary": highlight })}>
-                        {typeof price === 'number' ? `$${price}` : price}
+                        {price !== null ? `$${price}` : textPrice}
                     </span>
-                    {typeof price === 'number' && <span className="text-lg font-normal text-gray-600">/mo</span>}
+                    {price !== null && <span className="text-lg font-normal text-gray-600">{t("perMonth")}</span>}
                 </p>
                 <button className={clsx("w-full py-3 px-4 rounded-full transition-colors", { "bg-primary hover:bg-primary-accent": highlight, "bg-hero-background hover:bg-gray-200": !highlight })}>
-                    Get Started
+                    {t("getStarted")}
                 </button>
             </div>
             <div className="p-6 mt-1">
-                <p className="font-bold mb-0">FEATURES</p>
-                <p className="text-foreground-accent mb-5">Everything in basic, plus...</p>
+                <p className="font-bold mb-0">{t("featuresLabel")}</p>
+                <p className="text-foreground-accent mb-5">{t("featuresTagline")}</p>
                 <ul className="space-y-4 mb-8">
-                    {features.map((feature, index) => (
-                        <li key={index} className="flex items-center">
+                    {features.map((feature, featureIndex) => (
+                        <li key={featureIndex} className="flex items-center">
                             <BsFillCheckCircleFill className="h-5 w-5 text-secondary mr-2" />
                             <span className="text-foreground-accent">{feature}</span>
                         </li>
