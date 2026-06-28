@@ -1,9 +1,12 @@
 import React from 'react'
 import clsx from 'clsx'
+import { getTranslations } from 'next-intl/server'
 
 import { ctaDetails } from '@/data/cta'
 
-const PlayStoreButton = ({ dark }: { dark?: boolean }) => {
+const PlayStoreButton = async ({ dark }: { dark?: boolean }) => {
+    const t = await getTranslations('appButtons.playStore');
+
     return (
         <a href={ctaDetails.googlePlayUrl}>
             <button
@@ -24,10 +27,10 @@ const PlayStoreButton = ({ dark }: { dark?: boolean }) => {
                 </div>
                 <div>
                     <div className="text-xs">
-                        GET IT ON
+                        {t('subtitle')}
                     </div>
                     <div className="-mt-1 font-sans text-xl font-semibold">
-                        Google Play
+                        {t('title')}
                     </div>
                 </div>
             </button>

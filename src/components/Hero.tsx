@@ -1,12 +1,15 @@
 import React from 'react';
 import Image from 'next/image';
+import { getTranslations } from 'next-intl/server';
 
 import AppStoreButton from './AppStoreButton';
 import PlayStoreButton from './PlayStoreButton';
 
 import { heroDetails } from '@/data/hero';
 
-const Hero: React.FC = () => {
+const Hero: React.FC = async () => {
+    const t = await getTranslations('hero');
+
     return (
         <section
             id="hero"
@@ -21,8 +24,8 @@ const Hero: React.FC = () => {
             </div>
 
             <div className="text-center">
-                <h1 className="text-4xl md:text-6xl md:leading-tight font-bold text-foreground max-w-lg md:max-w-2xl mx-auto">{heroDetails.heading}</h1>
-                <p className="mt-4 text-foreground max-w-lg mx-auto">{heroDetails.subheading}</p>
+                <h1 className="text-4xl md:text-6xl md:leading-tight font-bold text-foreground max-w-lg md:max-w-2xl mx-auto">{t('heading')}</h1>
+                <p className="mt-4 text-foreground max-w-lg mx-auto">{t('subheading')}</p>
                 <div className="mt-6 flex flex-col sm:flex-row items-center sm:gap-4 w-fit mx-auto">
                     <AppStoreButton dark />
                     <PlayStoreButton dark />
@@ -35,7 +38,7 @@ const Hero: React.FC = () => {
                     sizes="(max-width: 768px) 100vw, 384px"
                     priority={true}
                     unoptimized={true}
-                    alt="app mockup"
+                    alt={t('appMockupAlt')}
                     className='relative mt-12 md:mt-16 mx-auto z-10'
                 />
             </div>
