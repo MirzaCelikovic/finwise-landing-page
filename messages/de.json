@@ -1,0 +1,224 @@
+{
+  "metadata": {
+    "title": "Finwise - Intelligente, sichere Finanzverwaltung",
+    "description": "Finwise bietet Unternehmen modernste Technologielösungen für mehr Erfolg und Effizienz."
+  },
+  "nav": {
+    "links": {
+      "features": "Funktionen",
+      "pricing": "Preise",
+      "testimonials": "Kundenstimmen"
+    },
+    "download": "Herunterladen",
+    "getStarted": "Loslegen",
+    "toggleNavigation": "Navigation umschalten",
+    "switchLanguage": "Sprache wechseln"
+  },
+  "hero": {
+    "heading": "Intelligente, sichere und einfache Finanzverwaltung",
+    "subheading": "Von müheloser Budgetplanung bis zu Anlage-Einblicken in Echtzeit – mit Finwise behalten Sie Ihr Geld so gut im Griff wie nie zuvor",
+    "appMockupAlt": "App-Vorschau"
+  },
+  "logos": {
+    "trustedBy": "Vertraut von <highlight>2000+</highlight> Kundinnen und Kunden weltweit"
+  },
+  "benefits": {
+    "srHeading": "Funktionen",
+    "items": [
+      {
+        "title": "Intelligente Budgetplanung",
+        "description": "Schluss mit dem Rätselraten bei Ihren Finanzen. Unser KI-gestütztes Budget-Tool passt sich Ihrem Alltag an und hilft Ihnen, am Ball zu bleiben.",
+        "bullets": [
+          {
+            "title": "Intelligente Kategorisierung",
+            "description": "Sortiert Ihre Transaktionen automatisch für gestochen scharfe Einblicke."
+          },
+          {
+            "title": "Individuelle Ziele",
+            "description": "Setzen und verfolgen Sie Finanzziele, die Ihnen wirklich wichtig sind."
+          },
+          {
+            "title": "Vorausschauende Analyse",
+            "description": "Bleiben Sie Ihren Finanzen dank Ausgabenprognosen und Warnhinweisen einen Schritt voraus."
+          }
+        ]
+      },
+      {
+        "title": "Müheloses Investieren",
+        "description": "Bauen Sie schon heute Vermögen auf – ganz ohne Finanzstudium. Finwise macht das Investieren zugänglich und unkompliziert.",
+        "bullets": [
+          {
+            "title": "Mikro-Investitionen",
+            "description": "Starten Sie mit nur 1 $ und sehen Sie zu, wie Ihr Geld wächst."
+          },
+          {
+            "title": "Expertenportfolios",
+            "description": "Wählen Sie aus Anlagestrategien, die zu Ihrer Risikobereitschaft passen."
+          },
+          {
+            "title": "Performance in Echtzeit",
+            "description": "Verfolgen Sie Ihre Investitionen mit leicht verständlichen Kennzahlen und Grafiken."
+          }
+        ]
+      },
+      {
+        "title": "Sicherheit auf Bankniveau",
+        "description": "Ihre Finanzdaten verdienen den besten Schutz. Mit den modernsten Sicherheitsvorkehrungen von Finwise sind Sie auf der sicheren Seite.",
+        "bullets": [
+          {
+            "title": "Verschlüsselung auf Militärniveau",
+            "description": "Ihre Daten werden mit höchster Verschlüsselung geschützt."
+          },
+          {
+            "title": "Biometrische Anmeldung",
+            "description": "Greifen Sie sicher per Fingerabdruck oder Gesichtserkennung auf Ihr Konto zu."
+          },
+          {
+            "title": "Betrugserkennung in Echtzeit",
+            "description": "Unser System überwacht rund um die Uhr verdächtige Aktivitäten, damit Ihr Geld sicher bleibt."
+          }
+        ]
+      }
+    ]
+  },
+  "sections": {
+    "pricing": {
+      "title": "Preise",
+      "description": "Einfache, transparente Preise. Keine Überraschungen."
+    },
+    "testimonials": {
+      "title": "Das sagen unsere Kunden",
+      "description": "Hören Sie von denen, die bereits auf uns setzen."
+    }
+  },
+  "pricing": {
+    "perMonth": "/Mon.",
+    "getStarted": "Loslegen",
+    "featuresLabel": "FUNKTIONEN",
+    "featuresTagline": "Alles aus Basic, plus …",
+    "tiers": [
+      {
+        "name": "Starter",
+        "features": [
+          "Grundlegende Cloud-Integration",
+          "Bis zu 5 Teammitglieder",
+          "20 GB Speicher",
+          "E-Mail-Support"
+        ]
+      },
+      {
+        "name": "Pro",
+        "features": [
+          "Erweiterte Cloud-Integration",
+          "Bis zu 20 Teammitglieder",
+          "100 GB Speicher",
+          "Bevorzugter E-Mail- & Telefonsupport",
+          "Erweiterte Analysen"
+        ]
+      },
+      {
+        "name": "Enterprise",
+        "price": "Individuell",
+        "features": [
+          "Vollständige Cloud-Integration",
+          "Unbegrenzte Teammitglieder",
+          "Unbegrenzter Speicher",
+          "Engagierter Support rund um die Uhr",
+          "Maßgeschneiderte Lösungen",
+          "Schulung vor Ort"
+        ]
+      }
+    ]
+  },
+  "testimonials": {
+    "items": [
+      {
+        "name": "John Smith",
+        "role": "CEO bei Company",
+        "message": "Die KI-gestützten Einblicke von {brand} haben unsere Finanzplanung für Kunden völlig verändert. In der heutigen Finanzwelt ist das eine unverzichtbare Ressource."
+      },
+      {
+        "name": "Jane Doe",
+        "role": "CTO bei Startup",
+        "message": "Als CTO beeindrucken mich die robusten Sicherheitsmaßnahmen und nahtlosen Integrationen von {brand}. Es ist selten, eine App zu finden, die Benutzerfreundlichkeit so gut mit fortschrittlicher Technologie verbindet."
+      },
+      {
+        "name": "Emily Johnson",
+        "role": "Produktmanagerin",
+        "message": "{brand} revolutioniert die persönliche Finanzverwaltung. Das intuitive Design und die starken Funktionen machen es zum unverzichtbaren Werkzeug für alle, die es mit ihrem finanziellen Wachstum ernst meinen."
+      }
+    ]
+  },
+  "faq": {
+    "label": "FAQ",
+    "heading": "Häufig gestellte Fragen",
+    "tagline": "Fragen Sie uns alles!",
+    "items": [
+      {
+        "question": "Ist {brand} sicher?",
+        "answer": "Absolut. Wir schützen Ihre Daten mit Verschlüsselung auf Bankniveau und speichern Ihre Anmeldedaten niemals. Zusätzlich sorgt unsere biometrische Anmeldung für eine extra Sicherheitsebene."
+      },
+      {
+        "question": "Kann ich {brand} auf mehreren Geräten nutzen?",
+        "answer": "Selbstverständlich! Ihr Finwise-Konto synchronisiert sich nahtlos über all Ihre Geräte hinweg – Smartphone, Tablet und Computer."
+      },
+      {
+        "question": "Kann ich all meine Bankkonten verbinden?",
+        "answer": "Ja! {brand} unterstützt Verbindungen mit über 10.000 Finanzinstituten weltweit. Melden Sie sich einfach über unser sicheres Portal an, um Ihre Konten zu verknüpfen."
+      },
+      {
+        "question": "Brauche ich Finanzwissen, um die Anlagefunktionen zu nutzen?",
+        "answer": "Überhaupt nicht! Unsere von Experten zusammengestellten Portfolios und Lernmaterialien machen das Investieren für alle zugänglich – ganz gleich, wie viel Erfahrung Sie mitbringen."
+      },
+      {
+        "question": "Was, wenn ich Hilfe bei der App brauche?",
+        "answer": "Unser engagiertes Support-Team ist rund um die Uhr per Chat oder E-Mail für Sie da. Außerdem bieten wir umfangreiche In-App-Tutorials und eine umfassende Wissensdatenbank, damit Sie das Beste aus Finwise herausholen."
+      }
+    ]
+  },
+  "stats": {
+    "items": [
+      {
+        "title": "20 Mio.+",
+        "description": "Transaktionen werden täglich sicher verarbeitet und liefern Einblicke in Echtzeit."
+      },
+      {
+        "title": "5,0",
+        "description": "Sterne-Bewertung, durchgehend in allen App-Stores gehalten."
+      },
+      {
+        "title": "200+",
+        "description": "Finanzinstitute sind nahtlos integriert, damit Sie alle Konten an einem Ort verwalten."
+      }
+    ]
+  },
+  "cta": {
+    "heading": "Schließen Sie sich über 1 Million Nutzern an und revolutionieren Sie Ihre Finanzen",
+    "subheading": "Ihre Reise zur finanziellen Freiheit beginnt hier. Laden Sie Finwise noch heute herunter und machen Sie den ersten Schritt in eine sorgenfreiere finanzielle Zukunft!"
+  },
+  "appButtons": {
+    "appStore": {
+      "subtitle": "Laden im",
+      "title": "App Store"
+    },
+    "playStore": {
+      "subtitle": "JETZT BEI",
+      "title": "Google Play"
+    }
+  },
+  "footer": {
+    "subheading": "Wir stärken Unternehmen mit modernsten Finanztechnologie-Lösungen.",
+    "quickLinksHeading": "Schnellzugriff",
+    "quickLinks": {
+      "features": "Funktionen",
+      "pricing": "Preise",
+      "testimonials": "Kundenstimmen"
+    },
+    "contactHeading": "Kontakt",
+    "emailLabel": "E-Mail",
+    "phoneLabel": "Telefon",
+    "copyright": "Copyright © {year} {brand}. Alle Rechte vorbehalten.",
+    "madeWith": "Mit ♥ erstellt von <link>Nexi Launch</link>",
+    "uiKit": "UI-Kit von <link>Youthmind</link>"
+  }
+}
